@@ -54,17 +54,18 @@
     </div>
     <div class="my-6">
         <h3 class="text-2xl font-semibold border-b-2 border-white">Kerolap</h3>
-        <div class="flex justify-around gap-4">
-            <div class="px-4 pt-2 pb-4 border border-yellow-600 rounded mt-2">
+        <div class="mt-2 flex justify-around gap-4">
+            <div class="grow px-4 pt-2 pb-4 border border-yellow-600 rounded mt-2">
                 <!-- RTG buttons START -->
                 <h5 class="text-xl text-yellow-600 font-semibold">RTG</h5>
                 <button onclick=" fetchData('kerolap','rtg','alap')"
                     class="font-semibold rounded mt-2 px-4 py-2 bg-yellow-800 hover:bg-yellow-700 text-white">ALAP</button>
                 <button onclick="fetchData('kerolap','rtg','mellkasi_folyadek')"
-                    class="font-semibold rounded mt-2 px-4 py-2 bg-yellow-800 hover:bg-yellow-700 text-white">Mk.
+                    class="font-semibold rounded mt-2 px-4 py-2 bg-yellow-800 hover:bg-yellow-700 text-white">Mellkasi
                     folyadek</button>
                 <button onclick="fetchData('kerolap','rtg','mellkasi_folyadek_pleura')"
-                    class="font-semibold rounded mt-2 px-4 py-2 bg-yellow-800 hover:bg-yellow-700 text-white">Mk. Foly.
+                    class="font-semibold rounded mt-2 px-4 py-2 bg-yellow-800 hover:bg-yellow-700 text-white">Mellkasi
+                    Folyadek
                     Pleura</button>
                 <button onclick="fetchData('kerolap','rtg','mellkasi_folyadek_pleura')"
                     class="font-semibold rounded mt-2 px-4 py-2 bg-yellow-800 hover:bg-yellow-700 text-white">Illeus</button>
@@ -73,7 +74,7 @@
             </div>
             <!-- RTG buttons END -->
             <!-- UH buttons START -->
-            <div class="px-4 pt-2 pb-4 border border-purple-600 rounded mt-2">
+            <div class="grow px-4 pt-2 pb-4 border border-purple-600 rounded mt-2">
                 <h5 class="text-xl text-purple-600 font-semibold">UH</h5>
                 <button onclick=" fetchData('kerolap','uh','alap')"
                     class="font-semibold rounded mt-2 px-4 py-2 bg-purple-800 hover:bg-purple-700 text-white">ALAP</button>
@@ -99,7 +100,7 @@
             </div>
             <!-- UH buttons END -->
             <!-- CT buttons START -->
-            <div class="flex flex-col px-4 pt-2 pb-4 border border-cyan-600 rounded mt-2">
+            <div class="grow flex flex-col px-4 pt-2 pb-4 border border-cyan-600 rounded mt-2">
                 <h5 class="text-xl text-cyan-600 font-semibold">CT</h5>
                 <button onclick=" fetchData('kerolap','rtg','alap')"
                     class="font-semibold rounded mt-2 px-4 py-2 bg-cyan-800 hover:bg-cyan-700 text-white">Koponyas</button>
