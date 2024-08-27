@@ -1,13 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pepe's Sablonok</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<!-- <body class="mt-5 vw-100 bg-dark text-light d-flex flex-column justify-content-center align-items-center"> -->
+
+<body class="h-screen w-screen bg-black text-white flex flex-col overflow-hidden px-10 pt-6">
+    <div class="text-center text-4xl font-bold"> PEPE'S SABLONOK </div>
+    <div class="my-6">
+        <h3 class="text-2xl font-semibold border-b-2 border-white">Jelen panaszok</h3>
+        <button onclick="fetchData('jelen')"
+            class=" font-semibold rounded mt-2 px-4 py-2 bg-green-800 hover:bg-green-700 text-white">
+            Negative
+        </button>
+    </div>
+    <div class="my-6">
+        <h3 class="text-2xl font-semibold border-b-2 border-white">Status</h3>
+        <div>
+            <button onclick="fetchData('status','complete')"
+                class="font-semibold rounded mt-2 px-4 py-2 bg-blue-800 hover:bg-blue-700 text-white">COMPLETE</button>
+            <button onclick="fetchData('status','no_neuro')"
+                class="font-semibold rounded mt-2 px-4 py-2 bg-blue-800 hover:bg-blue-700 text-white">NO
+                NEURO</button>
+            <button onclick="fetchData('status','vakbel')"
+                class="font-semibold rounded mt-2 px-4 py-2 bg-blue-800 hover:bg-blue-700 text-white">VAKBEL</button>
+        </div>
+    </div>
+    <div class="my-6">
+        <h3 class="text-2xl font-semibold border-b-2 border-white">EKG</h3>
+        <div>
+            <button onclick="fetchData('status','complete')"
+                class="font-semibold rounded mt-2 px-4 py-2 bg-orange-800 hover:bg-orange-700 text-white">Normal</button>
+            <button onclick="fetchData('status','no_neuro')"
+                class="font-semibold rounded mt-2 px-4 py-2 bg-orange-800 hover:bg-orange-700 text-white">Neg.
+                Infarktus</button>
+        </div>
+    </div>
+    <div class="my-6">
+        <h3 class="text-2xl font-semibold border-b-2 border-white">Kerolap</h3>
+        <div class="flex justify-around gap-4">
+            <div class="px-4 pt-2 pb-4 border border-yellow-600 rounded mt-2">
+                <h5 class="text-xl text-yellow-600 font-semibold">RTG</h5>
+                <button onclick=" fetchData('kerolap','rtg','alap')"
+                    class="font-semibold rounded mt-2 px-4 py-2 bg-yellow-800 hover:bg-yellow-700 text-white">ALAP</button>
+                <button onclick="fetchData('kerolap','rtg','alap')"
+                    class="font-semibold rounded mt-2 px-4 py-2 bg-yellow-800 hover:bg-yellow-700 text-white">Mellkasi</button>
+                <button onclick="fetchData('kerolap','rtg','alap')"
+                    class="font-semibold rounded mt-2 px-4 py-2 bg-yellow-800 hover:bg-yellow-700 text-white">Hasi</button>
+            </div>
+            <div class="px-4 pt-2 pb-4 border border-purple-600 rounded mt-2">
+                <h5 class="text-xl text-purple-600 font-semibold">UH</h5>
+                <button onclick=" fetchData('kerolap','uh','alap')"
+                    class="font-semibold rounded mt-2 px-4 py-2 bg-purple-800 hover:bg-purple-700 text-white">ALAP</button>
+                <button onclick=" fetchData('kerolap','uh','alap')"
+                    class="font-semibold rounded mt-2 px-4 py-2 bg-purple-800 hover:bg-purple-700 text-white">Hasi</button>
+                <div class="flex flex-col">
+                    <button onclick="fetchData('kerolap','uh','gyomor_nyombel_fekely')"
+                        class="font-semibold rounded mt-2 px-4 py-2 bg-purple-800 hover:bg-purple-700 text-white">GYOMORFEKÉLY
+                        ÉS
+                        NYOMBÉLFEKÉLY</button>
+                    <button onclick="fetchData('kerolap','uh','epeko_epeholyag_gyulladas')"
+                        class="font-semibold rounded mt-2 px-4 py-2 bg-purple-800 hover:bg-purple-700 text-white">EPEKŐ
+                        ÉS
+                        EPEHÓLYAG-GYULLADÁS</button>
+                </div>
+            </div>
+            <div class="flex flex-col px-4 pt-2 pb-4 border border-cyan-600 rounded mt-2">
+                <h5 class="text-xl text-cyan-600 font-semibold">CT</h5>
+                <button onclick=" fetchData('kerolap','rtg','alap')"
+                    class="font-semibold rounded mt-2 px-4 py-2 bg-cyan-800 hover:bg-cyan-700 text-white">Koponyas</button>
+                <button onclick="fetchData('kerolap','rtg','alap')"
+                    class="font-semibold rounded mt-2 px-4 py-2 bg-cyan-800 hover:bg-cyan-700 text-white">Thrombozis
+                    Mellkasi</button>
+                <button onclick="fetchData('kerolap','rtg','alap')"
+                    class="font-semibold rounded mt-2 px-4 py-2 bg-cyan-800 hover:bg-cyan-700 text-white">Lumbalis</button>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 
