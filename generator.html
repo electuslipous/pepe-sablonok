@@ -1,0 +1,76 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pepe's Sablonok</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-center font-semibold h-screen w-screen bg-black text-white overflow-hidden">
+    <h2 class="text-4xl pt-10">PEPE'S SABLONOK</h2>
+    <h3 class="text-2xl">Sablon Generator</h3>
+    <div class="my-6 text-xl w-[500px] mx-auto flex flex-col gap-2">
+        <div class="flex gap-2 border border-white rounded">
+            <label for="category" class="flex-none bg-white px-4 py-2 text-black">Category</label>
+            <select name="category" id="category" class="grow py-2 bg-black text-white">
+                <option value=""></option>
+                <option value="jelen">Jelen</option>
+                <option value="kerolap">Kerolap</option>
+                <option value="status">Status</option>
+                <option value="ekg">EKG</option>
+                <option value="rdv">RDV</option>
+            </select>
+        </div>
+        <div class="flex gap-2 border border-white rounded">
+            <label for="title"
+                class="flex-none bg-white py-2 px-4 inline-block text-center align-middle text-black">Title</label>
+            <input type="text" name="title" id="title" class="grow py-2 bg-black text-white">
+        </div>
+        <div class="flex gap-2 border border-white rounded">
+            <label for="content"
+                class="flex-none bg-white py-2 px-4 inline-block text-center align-middle text-black">Content</label>
+            <textarea name="content" id="content" cols="30" rows="10"
+                class="text-sm grow bg-black text-white"></textarea>
+        </div>
+        <button onclick="generate()"
+            class="font-semibold rounded mt-2 px-4 py-2 bg-green-800 hover:bg-green-700 text-white">
+            Generate
+        </button>
+
+        <div class="rounded border border-white p-4 mt-2">
+            <h2 class="text-start pb-6">Result:</h2>
+            <pre id="result" class="text-start" style="white-space: pre-wrap;"></pre>
+        </div>
+    </div>
+    <script>
+        function generate() {
+            let category = document.getElementById('category').value;
+            let title = document.getElementById('title').value;
+            let content = document.getElementById('content').value;
+            let result = document.getElementById('result');
+            if (category === "") {
+                // Output only the title and content if category is empty
+                output = {
+                    [title]: content
+                };
+            } else {
+                // Otherwise, format the JSON object with the category
+                output = {
+                    [category]: {
+                        [title]: content
+                    }
+                };
+            }
+
+            // Log the formatted JSON object
+
+            result.innerHTML = JSON.stringify(output, null, 4);
+
+            category = ""
+            title = ""
+            content = ""
+
+        }
+    </script>
+</body>
+
+</html>

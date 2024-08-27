@@ -5,14 +5,32 @@
         "no_neuro": "Triage Idő:\tTriage Kategória:\nKülsérelmi nyom nem látható. Közepesen fejlett, közepesen táplált. A bőr közepesen pigmentált. Anaemia, cyanosis, oedema, dyspnoe nem észlelhető. A conjunctivák közepesen vérteltek, a sclerák fehérek, a nyelv nedves, nem lepedékes. A mellkas részarányos, a tüdők felett puhasejtes légzés hallható. Oldalkülönbség nem hallható. A szívcsúcslökés nem tapintható. Tiszta, ritmusos szívhangok. Perifériás alsó végtagi verőér pulzáció mindkét oldalon tapintható. A has puha, betapintható. Kp. élénk bélhangok. Nyomásérzékenység, kóros resistentia, ascites nem észlelhető. A hepar, lien nem tapintható. Máj és a lép tompulat megtartott. A vesék ütögetésre nem érzékenyek.\nNeurológiai gócjele nincs. A pupillák kerekek, egyenlőek, centrálisak, közepesen tágak, ép szélűek. Pszichésen rendezett, éber, orientált, kérdésekre adekvát válaszokat ad.\nEKG: /perc, sinus ritmus, kp. tengelyállás, norm. AV-idő, norm. széles QRS, isoelektromos ST-szakaszok, poz. T-hullámok.\nLSZ: /min   SO2: %   RR: Hgmm   P: /min   CRT: sec   GCS: 4-6-5   T: C   VC: mmol/l",
         "vakbel": "Triage Idő:\tTriage Kategória:\nKülsérelmi nyom nem látható. Közepesen fejlett, közepesen táplált. A bőr közepesen pigmentált. Anaemia, cyanosis, oedema, dyspnoe nem észlelhető. A conjunctivák közepesen vérteltek, a sclerák fehérek, a nyelv nedves, nem lepedékes. A mellkas részarányos, a tüdők felett puhasejtes légzés hallható. A szívcsúcslökés nem tapintható. Tiszta, ritmusos szívhangok. Perifériás alsó végtagi verőér pulzáció mindkét oldalon tapintható.\nA bal/jobb alsó/felső kvadráns tapintása során erős fájdalom provokált.\nA vakbélgyulladás direkt és indirekt jelei negatívak voltak. A Murphy-jel negatív volt.\nObturator, Psoas, Rebound, Rovsing jelek pozitívak.\nKp. élénk bélhangok. Nyomásérzékenység, kóros resistentia, ascites nem észlelhető. A hepar, lien nem tapintható. Máj és a lép tompulat megtartott. A vesék ütögetésre nem érzékenyek.\nNeurológiai gócjele nincs. A pupillák kerekek, egyenlőek, centrálisak, közepesen tágak, ép szélűek. Pszichésen rendezett, éber, orientált, kérdésekre adekvát válaszokat ad.\nEKG: /perc, sinus ritmus, kp. tengelyállás, norm. AV-idő, norm. széles QRS, izoelektromos ST-szakaszok, poz. T-hullámok.\nLSZ: /min   SO2: %   RR: Hgmm   P: /min   CRT: sec   GCS: 4-6-5   T: C   VC: mmol/l"
     },
+    "rdv": {
+        "normal": "RDV: kp. tág sphincter, kp. tág ampulla, ampullában kevés széklet, ujjal elérhető magasságig kóros nem tapintható, nyomásérzékenységet nem jelez. Kesztyűujjon világosbarna székletnyom, mely haemascreen negatív.",
+        "megdagadt": "RDV: A beteg megtagadta a vizsgálatot."
+    },
+    "ekg": {
+        "normal": "EKG: /perc, sinus ritmus, kp. tengelyállás, norm. AV-idő, norm. széles QRS, izoelektromos ST-szakaszok",
+        "neg_infarktus": "EKG: /perc, sinus ritmus, kp. tengelyállás, norm. AV-idő, norm. széles QRS, izoelektromos ST-szakaszok. Q-hullámok, ST-anomáliák, akut T-hullám inverzió, QRS-anomáliák, iszkémiás változások, akut infarktus, nem látható"
+    },
     "kerolap": {
         "rtg": {
-            "alap": "Tisztelt Kollega!\nKérném betegem szíves vizsgálatát.\nPneumonia? Mellkasi folyadék? Pangás jelei?\nKöszönetel: SKA"
+            "alap": "Tisztelt Kollega!\nKérném betegem szíves vizsgálatát.\nPneumonia? Mellkasi folyadék? Pangás jelei?\nKöszönetel: SKA",
+            "mellkasi_folyadek": "Tisztelt Kollega.\nKérném betegem vizsgálatát nehézlégzés, tüdő felett kopogtatással hallható tompulat miatt.  Folyadék kiterjedése? Pangás egyéb jelei?\n",
+            "mellkasi_folyadek_pleura": "Tisztelt Kollega!\nKérném betegem mellkasi folyadék gyűlem miatti vizsgálatát. Folyadék mennyisége? Punctio helyének meghatározását és megjelölését kérném.\nKöszönöm SKA\n",
+            "illeus": "Tisztelt Kollega!\nIlleus gyanú miatt kérném betegem vizsgálatát. Tágult bélkacs? Kóros niveau? Fordított U alakú bélkacs?\nKöszönöm SKA.\n",
+            "hasi": "Tisztelt Kollega!\nKérem a beteg szíves natív hasi felvételét! Nivó szabad levegő?\nKöszönettel SKA!\n"
         },
         "uh": {
             "alap": "Tisztelt Kollega!\nKérem beteg vizsgálatát. Gyulladásos jelek? Megvastagodott bélfal? Bármi kóros? Szabad folyadék?\nKöszönetel: SKA",
             "gyomor_nyombel_fekely": "Tisztelt Kollega!\nKérem beteg vizsgálatát.\nGyomorfekély? Nyombélfekély? Gyulladásos jelek? Megvastagodott bélfal? Bármi kóros? Szabad folyadék?\nKöszönetel: SKA",
-            "epeko_epeholyag_gyulladas": "Tisztelt Kollega!\nKérem beteg vizsgálatát.\nEpekő? Epehólyag-gyulladás? Gyulladásos jelek?\nMegvastagodott bélfal? Bármi kóros? Szabad folyadék?\nKöszönetel: SKA"
+            "epeko_epeholyag_gyulladas": "Tisztelt Kollega!\nKérem beteg vizsgálatát.\nEpekő? Epehólyag-gyulladás? Gyulladásos jelek?\nMegvastagodott bélfal? Bármi kóros? Szabad folyadék?\nKöszönetel: SKA",
+            "also_vegtagi_venae": "Tisztelt Kollega!\nKérném a beteg szíves Color-Doppler vizsgálatát MVT kizárása céljából.\nKöszönettel SKA!",
+            "ascites": "Tisztelt Kollega!\nKérném betegem vizsgálatát fizikális vizsgálattal észlelhető ascites gyanú miatt. Ascites? Kiterjedés, mennyiség? Lehetséges punctio helyének megjelölését kérném.\nKöszönöm SKA.\n",
+            "illeus": "Tisztelt Kollega!\nIlleus gyanú miatt kérném betegem vizsgálatát. Folyadék? Renyhe perisztaltika? Megvastagodott bélfal? Tágult bélkacs?\nKöszönöm SKA.\n"
+        },
+        "ct": {
+            "tudoembolia": "Tisztelt Kollega!\nKérem a beteg szíves Mellkas  CT vizsgálatát Pulmonális Embólia kizárásí céljából!\nKöszönettel SKA!\n"
         }
     }
 }
